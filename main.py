@@ -44,6 +44,6 @@ def add_store_sales():
 def get_store_sales():
     try:
         salesData = db.Cookies.find()
-        return dumps(Cookies)
+        return render_template("sales.html", sales={salesData})
     except Exception:
         return dumps({ 'error' : 'get no good'})
