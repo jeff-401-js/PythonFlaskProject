@@ -11,7 +11,7 @@
 
   </section>
   <section id="bottom">
-    <form id="addStore" action="/post" method="POST">
+    <form id="addStore">
       <fieldset>
         <legend>Store Info</legend>
         <label>Store Name</label>
@@ -26,6 +26,21 @@
       <button type="submit">Submit</button>
     </form>
   </section>
+  <form id="mongo" action="/post" method="POST">
+    <fieldset>
+      <legend>Store Info</legend>
+      <label>Store Name</label>
+      <input name="name" type="text" required>
+      <label>Minimum Customers</label>
+      <input name="minimum" type="number" required>
+      <label>Maximum Customers</label>
+      <input name="maximum" type="number" required>
+      <label>Average Cookie Sale</label>
+      <input name="average" type="number" required>
+    </fieldset>
+    <button>Submit</button>
+  </form>
+</section>
   {% endblock %}
 
 </body>
