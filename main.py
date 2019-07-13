@@ -8,9 +8,9 @@ def hello():
 #     return f"Hello, {NAME}"
     return render_template("index.html", name=NAME)
 
-@app.route('/numbertwo')
+@app.route('/sales')
 def second_route():
-    return render_template("numbertwo.html")
+    return render_template("sales.html")
 
 # @app.route('/test')
 # def test_route():

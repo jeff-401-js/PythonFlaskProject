@@ -1,3 +1,41 @@
-body{
-  background-color: blue;
+h1 {
+  font-size: 42px;
+}
+a {
+  color: black;
+}
+article {
+background-color: aqua;
+margin-top: 100px;
+padding: 5px;
+}
+
+.unorder {
+  list-style-type: circle;
+  padding: 20px;
+}
+
+table, th, td{
+  border: 1px solid black;
+  padding: 5px;
+}
+#bottom{
+  border: 2px solid black;
+  margin-top: 35px;
+  
+}
+input{
+  border: 2px solid green;
+  background-color: aquamarine;
+}
+fieldset { 
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+  width: 80%;
 }
