@@ -23,13 +23,14 @@ def second_route():
 @app.route("/post", methods = ['POST'])
 def add_store_sales():
     try:
-        data = json.loads(request.data)
-        name = data["name"]
-        minimum = data["minimum"]
-        maximum = data["maximum"]
-        average = data["average"]
+        # data = json.loads(request.data)
+
+        name = request.form["name"]
+        minimum = request.form["minimum"]
+        maximum = request.form["maximum"]
+        average = request.form["average"]
         if name and minimum and maximum and average:
-          status = db.Cookies.insert_one({
+          db.Cookies.insert_one({
             "name" : name,
             "minimum" : minimum,
             "maximum" : maximum,
@@ -42,7 +43,7 @@ def add_store_sales():
 @app.route("/get", methods = ['GET'])
 def get_store_sales():
     try:
-        salesData = db.Contacts.find()
-        return dumps(contacts)
+        salesData = db.Cookies.find()
+        return dumps(Cookies)
     except Exception:
         return dumps({ 'error' : 'get no good'})
