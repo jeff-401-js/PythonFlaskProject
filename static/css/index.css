@@ -1,41 +1,28 @@
+body {
+  background-color: aqua;
+  margin-top: 50px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
 h1 {
   font-size: 42px;
 }
+
+img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 a {
-  color: black;
-}
-body {
-background-color: aqua;
-margin-top: 100px;
-padding: 5px;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.unorder {
-  list-style-type: circle;
-  padding: 20px;
-}
-
-table, th, td{
-  border: 1px solid black;
-  padding: 5px;
-}
-#bottom{
-  border: 2px solid black;
-  margin-top: 35px;
-  
-}
-input{
-  border: 2px solid green;
-  background-color: aquamarine;
-}
-fieldset { 
-  display: block;
-  margin-left: 2px;
-  margin-right: 2px;
-  padding-top: 0.35em;
-  padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  border: 2px groove (internal value);
-  width: 80%;
+footer {
+  margin-top: 250px;
 }
