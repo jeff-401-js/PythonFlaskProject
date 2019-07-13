@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
 #     return f"Hello, {NAME}"
-    return render_template("hello.html", name=NAME)
+    return render_template("index.html", name=NAME)
 
 @app.route('/numbertwo')
 def second_route():
