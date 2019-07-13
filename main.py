@@ -11,3 +11,7 @@ def hello():
 @app.route('/numbertwo')
 def second_route():
     return render_template("numbertwo.html")
+
+@app.route('/test')
+def test_route():
+    return render_template("test1.html", message="Hello Flask!", contacts = ['c1', 'c2', 'c3', 'c4', 'c5'])
