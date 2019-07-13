@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <div id="css">{% block css %}{% endblock %}</div>
+  
 </head>
 <body id="main">
   <div id="nav">{% block nav %}{% endblock %}</div>

@@ -1,8 +1,9 @@
 {% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
 {% block nav %}
-
 <a href="/sales">Sales Page</a>
-
 {% endblock %}
 {% block content %}
 <h1>Welcome to the homepage</h1>
