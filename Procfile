@@ -1,1 +1,1 @@
-web: gunicorn main:radiant-cliffs-18482
+web: gunicorn main.py:app
