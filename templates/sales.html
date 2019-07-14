@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block nav %}
+<a href="/">Home Page</a>
+{% endblock %}
+
+  {% block content %}
+  <h1>Welcome to the Store</h1>
+  
+  </header>
+  <section id="middle">
+
+  </section>
+  <section id="bottom">
+    <form id="addStore">
+      <fieldset>
+        <legend>Store Info</legend>
+        <label>Store Name</label>
+        <input name="name" type="text" required>
+        <label>Minimum Customers</label>
+        <input name="minimum" type="number" required>
+        <label>Maximum Customers</label>
+        <input name="maximum" type="number" required>
+        <label>Average Cookie Sale</label>
+        <input name="average" type="number" required>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <!-- <section>
+  <h1>MONGO</h1>
+  <form id="mongo" action="/post" method="POST">
+    <fieldset>
+      <legend>Store Info</legend>
+      <label>Store Name</label>
+      <input name="name" type="text" required>
+      <label>Minimum Customers</label>
+      <input name="minimum" type="number" required>
+      <label>Maximum Customers</label>
+      <input name="maximum" type="number" required>
+      <label>Average Cookie Sale</label>
+      <input name="average" type="number" required>
+    </fieldset>
+    <button>Submit</button>
+  </form>
+</section>
+<section>
+  <h1>MONGO Printout</h1>
+  <p>{{salesData}}</p>
+  <a href="/get">Get sales data</a>
+</section> -->
+  {% endblock %}
+
+</body>
+</html>

@@ -1,1 +1,1 @@
-NAME = "Jeff"
+MONGO='localhost:27017'
